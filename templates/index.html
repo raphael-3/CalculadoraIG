@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jorge Milhem Haddad - Ginecologista</title>
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<header>
+		<h1>Jorge Milhem Haddad</h1>
+		<h2>Ginecologista - Uroginecologista</h2>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href="#perfil">Perfil</a></li>
+			<li><a href="#entrevistas">Entrevistas</a></li>
+			<li><a href="#artigos">Artigos de Saúde</a></li>
+			<li><a href="#localizacao">Localização</a></li>
+			<li><a href="#agendamento">Agendamento de Consulta</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<section id="perfil">
+			<h2>Perfil do Dr. Jorge Milhem Haddad</h2>
+			<img src="perfil.jpg" alt="Foto do Dr. Jorge Milhem Haddad">
+			<p>Dr. Jorge Milhem Haddad é médico ginecologista e uroginecologista com mais de 20 anos de experiência. É formado pela Universidade de São Paulo e possui especialização em uroginecologia pela Sociedade Brasileira de Urologia. Atua como professor em diversas instituições e é autor de diversos artigos científicos.</p>
+		</section>
+		
+		<section id="entrevistas">
+			<h2>Entrevistas com o Dr. Jorge Milhem Haddad</h2>
+			<ul>
+				<li>
+					<h3>Entrevista na Revista Saúde</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper, ipsum a porttitor accumsan, augue felis pharetra leo, a lacinia tellus nunc non odio.</p>
+				</li>
+				<li>
+					<h3>Entrevista na TV Globo</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper, ipsum a porttitor accumsan, augue felis pharetra leo, a lacinia tellus nunc non odio.</p>
+				</li>
+				<br>
+				<li>
+					<h3>Entrevista na Rádio Bandeirantes</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper, ipsum a porttitor accumsan, augue felis pharetra leo, a lacinia tellus nunc non odio.</p>
+				</li>
+			</ul>
+		</section>
+		<section id="agendamento">
+          <h2>Agende uma consulta</h2>
+          <form action="processa_form.php" method="post">
+			  <div>
+				<label for="nome">Nome completo:</label>
+            	<input type="text" id="nome" name="nome" required><br>
+			  </div>
+			  <br>
+			  <div>
+				<label for="email">E-mail:</label>
+				<input type="email" id="email" name="email" required><br>
+			  </div>
+			  <br>
+              <div>
+				<label for="telefone">Telefone:</label>
+            	<input type="tel" id="telefone" name="telefone" required><br>
+			  </div>
+			  <div>
+			  	<label for="mensagem">Mensagem:</label>
+			    <textarea id="mensagem" name="mensagem"></textarea><br>
+			    <button type="submit">Enviar</button><br>
+			  </div>
+          </form>
+        </section>
+		<section id="artigos">
+			<h2>Artigos de Saúde sobre Ginecologia e Uroginecologia</h2>
+			<ul>
+				<li>
+					<h3>Tratamento da Incontinência Urinária Feminina</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis semper, ipsum a porttitor accumsan, augue felis pharetra leo, a
