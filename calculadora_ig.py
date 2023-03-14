@@ -17,7 +17,7 @@ class IdadeGestacional:
         hoje = datetime.today().date()
         idade_gestacional = (hoje - self.data_ultrassom).days + self.idade_gestacional_ultrassom
         semanas, dias_usg = divmod(idade_gestacional, 7)
-        data_parto = self.data_ultrassom + timedelta(days=280 - idade_gestacional_ultrassom)
+        data_parto = self.data_ultrassom + timedelta(days=280 - self.idade_gestacional_ultrassom)
         return f"{semanas} semanas e {dias_usg} dias", dias_usg, data_parto.strftime("%d/%m/%Y")
 
     def qual_ig_usar(self):
