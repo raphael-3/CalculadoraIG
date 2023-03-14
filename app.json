@@ -1,0 +1,17 @@
+{
+  "name": "Calculadora IG",
+  "description": "<app-description>",
+  "repository": "https://github.com/raphael-3/CalculadoraIG.git",
+  "keywords": ["python", "flask"],
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "env": {
+    "PYTHONPATH": "src"
+  }
+}
