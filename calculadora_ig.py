@@ -71,22 +71,22 @@ class IdadeGestacional:
                 return "DUM", idade_final, outra_ig, "USG"
 
 ###  Exemplo de uso: ###
-# Exemplo de uso da classe IdadeGestacional
-dum = datetime(2023, 1, 1).date()  # data da última menstruação
-ultrassom = datetime(2023, 2, 1).date()  # data do primeiro ultrassom
-idade_gestacional_ultrassom = 4*7  # idade gestacional na data do ultrassom (em dias)
-
-# criando uma instância da classe com a data da última menstruação
-ig = IdadeGestacional(dum, ultrassom, idade_gestacional_ultrassom)
-
-# calculando a idade gestacional com base na DUM
-idade_gestacional, dias_dum, data_parto = ig.calcular_idade_gestacional_pela_dum()
-print(f"Idade gestacional pela DUM: {idade_gestacional}. Data prevista para o parto: {data_parto}.")
-
-# calculando a idade gestacional com base no primeiro ultrassom
-idade_gestacional, dias_usg, data_parto = ig.calcular_idade_gestacional_pelo_ultrassom()
-print(f"Idade gestacional pelo ultrassom: {idade_gestacional}. Data prevista para o parto: {data_parto}.")
-
-#Vendo qual método utilizar:
-metodo, idade_final, outra_ig, outro_metodo = ig.qual_ig_usar()
-print(f"Utilizar IG({metodo}): {idade_final} / IG({outro_metodo}): {outra_ig}")
+# # Exemplo de uso da classe IdadeGestacional
+# dum = datetime(2023, 1, 1).date()  # data da última menstruação
+# ultrassom = datetime(2023, 2, 1).date()  # data do primeiro ultrassom
+# idade_gestacional_ultrassom = 4*7  # idade gestacional na data do ultrassom (em dias)
+#
+# # criando uma instância da classe com a data da última menstruação
+# ig = IdadeGestacional(dum, ultrassom, idade_gestacional_ultrassom)
+#
+# # calculando a idade gestacional com base na DUM
+# idade_gestacional, dias_dum, data_parto = ig.calcular_idade_gestacional_pela_dum()
+# print(f"Idade gestacional pela DUM: {idade_gestacional}. Data prevista para o parto: {data_parto}.")
+#
+# # calculando a idade gestacional com base no primeiro ultrassom
+# idade_gestacional, dias_usg, data_parto = ig.calcular_idade_gestacional_pelo_ultrassom()
+# print(f"Idade gestacional pelo ultrassom: {idade_gestacional}. Data prevista para o parto: {data_parto}.")
+#
+# #Vendo qual método utilizar:
+# metodo, idade_final, outra_ig, outro_metodo = ig.qual_ig_usar()
+# print(f"Utilizar IG({metodo}): {idade_final} / IG({outro_metodo}): {outra_ig}")
