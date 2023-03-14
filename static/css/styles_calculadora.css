@@ -1,0 +1,117 @@
+/* Estilos gerais da página */
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  color: #333;
+  text-shadow: 2px 2px #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* Estilos gerais da página */
+body {
+  background-color: #f7f7f7;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos do cabeçalho */
+.header {
+  background-color: #5d5d5d;
+  color: #fff;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.header p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px 0 0;
+}
+
+/* Estilos do formulário */
+.form-wrapper {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+}
+
+.form-wrapper h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0069d9;
+}
+
+/* Estilos do campo de resultado */
+.result-wrapper {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.result-wrapper h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+
+.result-wrapper p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet">
+    <title>Cálculo Idade Gestacional</title>
+</head>
+<body>
+    <h1>Calculadora de Idade Gestacional</h1>
+    <form method="post" action="{{ url_for('calcular_idade_gestacional') }}">
+      <label for="data_ultima_menstruacao">Data da Última Menstruação:</label>
+      <input type="date" id="data_ultima_menstruacao" name="data_ultima_menstruacao" required>
+      <br>
+      <label for="data_primeiro_ultrassom">Data do Primeiro Ultrassom:</label>
+      <input type="date" id="data_primeiro_ultrassom" name="data_primeiro_ultrassom" required>
+      <br>
+      <label for="idade_gestacional_ultrassom_semanas">Idade Gestacional no Primeiro Ultrassom(semanas):</label>
+      <input type="number" id="idade_gestacional_ultrassom_semanas" name="idade_gestacional_ultrassom_semanas" required>
+      <br>
+      <label for="idade_gestacional_ultrassom_dias">Idade Gestacional no Primeiro Ultrassom(dias):</label>
+      <input type="number" id="idade_gestacional_ultrassom_dias" name="idade_gestacional_ultrassom_dias" value="0" required>
+      <br>
+      <br>
+      <input type="submit" value="Calcular Idade Gestacional" class="btn">
+    </form>
+</body>
+</html>

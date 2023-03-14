@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -6,7 +7,16 @@ body {
     color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 48px;
+  color: #333;
+  text-shadow: 2px 2px #fff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
 }
 
@@ -169,3 +179,29 @@ form button[type="submit"] {
 form button[type="submit"]:hover {
   background-color: #666;
 }
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0069d9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  background-color: #0062cc;
+  box-shadow: none;
+  transform: translateY(0);
+}
+
