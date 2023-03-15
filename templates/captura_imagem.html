@@ -1,9 +1,14 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h2>Envie a imagem</h2>
+<head>
+    <meta charset="UTF-8">
+    <link href="{{ url_for('static', filename='css/styles.css')}}" rel="stylesheet">
+    <title>Captura de foto</title>
+</head>
+  <h2>Envie a Foto seguindo as instruções</h2>
   <body>
-    <h1>Captura de Imagem</h1>
+    <h1>Captura de Foto</h1>
     <form action="/upload" method="POST" enctype="multipart/form-data">
       <input type="text" name="nome" placeholder="Digite o nome do arquivo">
       <input type="file" name="imagem">
@@ -11,5 +16,3 @@
     </form>
   </body>
 {% endblock %}
-
-</html>
