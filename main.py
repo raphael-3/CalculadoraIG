@@ -1,14 +1,18 @@
-from flask import Flask, render_template, request
+import os
+from flask import Flask, render_template, request, send_from_directory
 import requests
 from datetime import date, timedelta, datetime
 from calculadora_ig import IdadeGestacional
+import cv2
 
 app = Flask(__name__)
 
+app.config['uploads'] = 'uploads' # Diretório onde as imagens serão armazenadas
+
 
 @app.route('/')
-def hello_world():
-    return render_template("index.html")
+def main():
+    return render_template('captura_imagem.html')
 
 @app.route('/<name>')
 def greet(name):
@@ -33,7 +37,35 @@ def calculoig():
     else:
         return render_template('calculo_ig.html')
 
+#### PEGAR IMAGEM #####
 
+@app.route('/captura_imagem')
+def capturar():
+    return render_template('captura_imagem.html')
+
+@app.route('/upload', methods=['POST'])
+def upload():
+    # Salva a imagem enviada no diretório uploads
+    file = request.files['imagem']
+    filename = file.filename
+    file.save(os.path.join(app.config['uploads'], filename))
+
+    # Renderiza a página de exibição da imagem
+    return render_template('view.html', filename=filename)
+
+@app.route('/uploads/<filename>')
+def uploaded_file(filename):
+    # Retorna a imagem armazenada no diretório uploads
+    return send_from_directory(app.config['uploads'], filename)
+
+# @app.route('/upload', methods=['POST'])
+# def upload():
+#     file = request.files['image']
+#     # Faça algo com a imagem aqui
+#     return 'Imagem recebida com sucesso!'
+
+
+##### CALCULADORA IG ########
 @app.route('/calculadora')
 def calculadora():
     return render_template('calcular.html')

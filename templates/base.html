@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Adicionando o CSS do Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-vM1a/kz+jG2VJgBMz+MQ7axDjNJmLp7Jm/EZ+uJM7eHmW8GIfKvz6UO1AHJ9z6Wj" crossorigin="anonymous">
+  <title>Base</title>
+</head>
+<body>
+    <div class="header">
+      <h1>Bem-vindo ao Meu Site</h1>
+      <ul>
+        <li><a href="/">Página Inicial</a></li>
+        <li><a href="/sobre">Sobre</a></li>
+        <li><a href="/contato">Contato</a></li>
+      </ul>
+    </div>
+    <div class="content">
+      {% block content %}{% endblock %}
+    </div>
+    <div class="footer">
+      <p>&copy; 2021 Meu Site</p>
+    </div>
+</body>
+</html>
