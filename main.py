@@ -3,7 +3,6 @@ from flask import Flask, render_template, request, send_from_directory
 import requests
 from datetime import date, timedelta, datetime
 from calculadora_ig import IdadeGestacional
-import cv2
 
 app = Flask(__name__)
 
